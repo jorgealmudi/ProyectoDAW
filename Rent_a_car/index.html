@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rent a Car</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Navegación -->
+  <nav>
+    <div class="logo"><img src="images/logo.png" alt="Logo Rent a Car"> Rent a Car</div>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#vehiculos-disponibles">Vehículos Disponibles</a></li>
+      <li><a href="#vehiculos-alquilados">Vehículos Alquilados</a></li>
+      <li><a href="#empresa">Empresa</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#novedades">Novedades</a></li>
+      <li><a href="#ubicacion">Ubicación</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección: Inicio -->
+  <section id="inicio" class="seccion">
+    <h1>¡Bienvenidos a Rent a Car!</h1>
+    <p>Alquiler de vehículos, motos y furgonetas en toda la región.</p>
+    <img src="images/banner.jpg" alt="Banner Rent a Car" class="banner-img">
+  </section>
+
+  <!-- Sección: Vehículos disponibles -->
+  <section id="vehiculos-disponibles" class="seccion bg-light">
+    <h2>Vehículos Disponibles</h2>
+    <label for="filtro-tipo">Filtrar por tipo:</label>
+    <select id="filtro-tipo">
+      <option value="">Todos</option>
+      <option value="turismo">Turismo</option>
+      <option value="moto">Moto</option>
+      <option value="furgoneta">Furgoneta</option>
+    </select>
+
+    <!-- Tarjetas de vehículos -->
+    <div class="tarjetas-container">
+      <div class="tarjeta">
+        <h3>Toyota Corolla</h3>
+        <p>Tipo: Turismo</p>
+        <p>Categoría: Compacto</p>
+        <p>Precio: $45/día</p>
+        <p>Estado: ✅ Mantenimiento OK</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Yamaha R6</h3>
+        <p>Tipo: Moto</p>
+        <p>Categoría: Deportiva</p>
+        <p>Precio: $35/día</p>
+        <p>Estado: ⚠️ Próximo mantenimiento</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Renault Kangoo</h3>
+        <p>Tipo: Furgoneta</p>
+        <p>Categoría: Pequeña</p>
+        <p>Precio: $55/día</p>
+        <p>Estado: ❌ No disponible</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Vehículos alquilados -->
+  <section id="vehiculos-alquilados" class="seccion">
+    <h2>Vehículos Alquilados</h2>
+    <label for="filtro-tipo-alquilado">Filtrar por tipo:</label>
+    <select id="filtro-tipo-alquilado">
+      <option value="">Todos</option>
+      <option value="turismo">Turismo</option>
+      <option value="moto">Moto</option>
+      <option value="furgoneta">Furgoneta</option>
+    </select>
+
+    <div class="tarjetas-container">
+      <div class="tarjeta">
+        <h3>Seat Ibiza - 1234XYZ</h3>
+        <p>Cliente: Juan Pérez</p>
+        <p>Desde: 01/04/2025</p>
+        <p>Hasta: 07/04/2025</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Kawasaki Ninja ZX-10R - ABC567</h3>
+        <p>Cliente: Laura Torres</p>
+        <p>Desde: 03/04/2025</p>
+        <p>Hasta: 06/04/2025</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Información de la empresa -->
+  <section id="empresa" class="seccion bg-light">
+    <h2>Sobre Nosotros</h2>
+    <p>Rent a Car es una empresa dedicada al alquiler de vehículos, motos y furgonetas. Ofrecemos un servicio rápido, seguro y confiable con flota actualizada y mantenimiento periódico.</p>
+    <p><strong>¿Cómo funciona?</strong></p>
+    <ol>
+      <li>Elige tu vehículo ideal.</li>
+      <li>Contacta con nosotros vía correo o teléfono.</li>
+      <li>Acuerda fechas y lugar de recogida.</li>
+    </ol>
+  </section>
+
+  <!-- Sección: Contacto -->
+  <section id="contacto" class="seccion">
+    <h2>Contacto</h2>
+    <form id="formulario-contacto" novalidate>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <p>Email: contacto@rentacar.com</p>
+    <p>Teléfono: +123 456 7890</p>
+  </section>
+
+  <!-- Sección: Novedades / RSS -->
+  <section id="novedades" class="seccion bg-light">
+    <h2>Novedades</h2>
+    <div class="tarjetas-container">
+      <div class="tarjeta">
+        <h4>Nuevo Toyota Yaris en flota</h4>
+        <p>Agregamos nuevos modelos compactos ideales para ciudad.</p>
+      </div>
+      <div class="tarjeta">
+        <h4>Descuentos corporativos</h4>
+        <p>Empresas socias ahora pueden disfrutar de ofertas especiales.</p>
+      </div>
+      <div class="tarjeta">
+        <h4>Mantenimiento preventivo</h4>
+        <p>Revisamos todos los vehículos antes de cada uso para garantizar seguridad.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Ubicación -->
+  <section id="ubicacion" class="seccion">
+    <h2>Ubicación</h2>
+    <p><strong>Dirección:</strong> Calle Principal 123, Ciudad Central, País Fantasía</p>
+    <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+      src="https://maps.google.com/maps?q=Madrid&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Rent a Car. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
